@@ -9,12 +9,12 @@ package tagabukid.pictdservice.views;
  *
  * @author a
  */
-public class master_addServiceType extends javax.swing.JFrame {
+public class master_addServiceTypeForm extends javax.swing.JFrame {
 
     /**
      * Creates new form master_addServiceType
      */
-    public master_addServiceType() {
+    public master_addServiceTypeForm() {
         initComponents();
     }
 
@@ -41,16 +41,21 @@ public class master_addServiceType extends javax.swing.JFrame {
 
         xTextField1.setCaption("Service Name");
         xTextField1.setCaptionWidth(100);
+        xTextField1.setName("entity.ServiceName"); // NOI18N
         xTextField1.setPreferredSize(new java.awt.Dimension(300, 20));
+        xTextField1.setRequired(true);
         xFormPanel1.add(xTextField1);
 
         xTextField2.setCaption("Service Code");
         xTextField2.setCaptionWidth(100);
+        xTextField2.setName("entity.ServiceCode"); // NOI18N
         xTextField2.setPreferredSize(new java.awt.Dimension(70, 20));
+        xTextField2.setRequired(true);
         xFormPanel1.add(xTextField2);
 
         xTextArea1.setCaption("Description");
         xTextArea1.setCaptionWidth(100);
+        xTextArea1.setName("entity.ServiceDescription"); // NOI18N
         xTextArea1.setPreferredSize(new java.awt.Dimension(300, 100));
         jScrollPane1.setViewportView(xTextArea1);
 
@@ -93,20 +98,21 @@ public class master_addServiceType extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(master_addServiceType.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(master_addServiceTypeForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(master_addServiceType.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(master_addServiceTypeForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(master_addServiceType.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(master_addServiceTypeForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(master_addServiceType.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(master_addServiceTypeForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new master_addServiceType().setVisible(true);
+                new master_addServiceTypeForm().setVisible(true);
             }
         });
     }
