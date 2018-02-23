@@ -1,9 +1,9 @@
-<workunit schemaName = "master_add_service_type">
+<workunit schemaName = "pictd_master_servicetypes">
     <invokers>
         <invoker type="pictd_master_servicetypes:create" caption="Add Service type" create="create"/>
         <invoker type="pictd_master_servicetypes:open" caption="Add Service type" create="create"/>       
     </invokers>
-    <code class=""/>
+    <code class="tagabukid.pictdservice.model.addServiceTypeController"/>
     <pages>
         <page template="tagabukid.pictdservice.views.master_addServiceTypeForm"
     </pages>
