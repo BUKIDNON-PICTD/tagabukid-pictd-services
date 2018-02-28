@@ -1,0 +1,9 @@
+<workunit extends="com/rameses/seti2/templates/CrudForm.xml"  schemaName="pictd_master_servicetypes">
+    <invokers>
+        <invoker type="pictd_master_servicetypes:create" caption="Add Service type" action="create"/>
+        <invoker type="pictd_master_servicetypes:open" caption="Add Service type" action="open"/>       
+    </invokers>
+    <pages>
+        <page template="tagabukid.pictdservice.views.ServiceTypePage"/>
+    </pages>
+</workunit>

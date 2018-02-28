@@ -1,6 +1,6 @@
 <workunit extends="com/rameses/seti2/templates/CrudList.xml" schemaName="pictd_master_servicetypes">
     <invokers>
         <invoker folderid="/home/pictdservices/pictdservicesmaster" caption="Service Types" action="init" index="1" />
-        <invoker folderid="/explorer/txn/hrmistransaction" action="init" caption="Behavioral" index="20" role="MASTER"/>   
+        <invoker folderid="/explorer/txn/hrmistransaction" action="init" caption="Service Types" index="20" />   
     </invokers>
 </workunit>
