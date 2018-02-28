@@ -37,20 +37,22 @@ public class master_addServiceTypeForm extends javax.swing.JPanel {
         xTitledBorder1.setTitle("Service Type");
         xFormPanel1.setBorder(xTitledBorder1);
 
+        xTextField1.setText("entity.name");
         xTextField1.setCaption("Service Name");
         xTextField1.setCaptionWidth(100);
-        xTextField1.setName("entity.ServiceName"); // NOI18N
+        xTextField1.setName("entity.name"); // NOI18N
         xTextField1.setPreferredSize(new java.awt.Dimension(300, 20));
         xTextField1.setRequired(true);
         xFormPanel1.add(xTextField1);
 
         xTextField2.setCaption("Service Code");
         xTextField2.setCaptionWidth(100);
-        xTextField2.setName("entity.ServiceCode"); // NOI18N
+        xTextField2.setName("entity.code"); // NOI18N
         xTextField2.setPreferredSize(new java.awt.Dimension(70, 20));
         xTextField2.setRequired(true);
         xFormPanel1.add(xTextField2);
 
+        xTextArea1.setText("entity.description");
         xTextArea1.setCaption("Description");
         xTextArea1.setCaptionWidth(100);
         xTextArea1.setName("entity.ServiceDescription"); // NOI18N

@@ -45,9 +45,10 @@
       <SubComponents>
         <Component class="com.rameses.rcp.control.XTextField" name="xTextField1">
           <Properties>
+            <Property name="text" type="java.lang.String" value="entity.name"/>
             <Property name="caption" type="java.lang.String" value="Service Name"/>
             <Property name="captionWidth" type="int" value="100"/>
-            <Property name="name" type="java.lang.String" value="entity.ServiceName" noResource="true"/>
+            <Property name="name" type="java.lang.String" value="entity.name" noResource="true"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[300, 20]"/>
             </Property>
@@ -58,7 +59,7 @@
           <Properties>
             <Property name="caption" type="java.lang.String" value="Service Code"/>
             <Property name="captionWidth" type="int" value="100"/>
-            <Property name="name" type="java.lang.String" value="entity.ServiceCode" noResource="true"/>
+            <Property name="name" type="java.lang.String" value="entity.code" noResource="true"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[70, 20]"/>
             </Property>
@@ -74,6 +75,7 @@
           <SubComponents>
             <Component class="com.rameses.rcp.control.XTextArea" name="xTextArea1">
               <Properties>
+                <Property name="text" type="java.lang.String" value="entity.description"/>
                 <Property name="caption" type="java.lang.String" value="Description"/>
                 <Property name="captionWidth" type="int" value="100"/>
                 <Property name="name" type="java.lang.String" value="entity.ServiceDescription" noResource="true"/>

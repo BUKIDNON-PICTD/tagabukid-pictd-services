@@ -1,4 +1,4 @@
-<folders>
+<folders> 
     <folder id="explorer">
         <folder id="txn">
             <folder id="pictdservicestransaction" caption="PICTD Services" index="1"/>
@@ -13,7 +13,7 @@
     </folder> 
     <folder id="home">
         <folder id="pictdservices" caption="PICTD Services">
-            <folder id="master" caption="PICTD Services Master" index="5"/>
+            <folder id="pictdservicesmaster" caption="PICTD Services Master" index="1"/>
         </folder>
     </folder>
 </folders>
