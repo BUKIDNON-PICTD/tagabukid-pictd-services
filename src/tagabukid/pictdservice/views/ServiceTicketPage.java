@@ -5,16 +5,22 @@
  */
 package tagabukid.pictdservice.views;
 
+import com.rameses.rcp.ui.annotations.StyleSheet;
+import com.rameses.rcp.ui.annotations.Template;
+import com.rameses.seti2.views.CrudFormPage;
+
 /**
  *
  * @author pictdpc
  */
-public class customerTicketEntry extends javax.swing.JPanel {
+@StyleSheet
+@Template(CrudFormPage.class)
+public class ServiceTicketPage extends javax.swing.JPanel {
 
     /**
      * Creates new form customerTicketEntry1
      */
-    public customerTicketEntry() {
+    public ServiceTicketPage() {
         initComponents();
     }
 
@@ -42,15 +48,19 @@ public class customerTicketEntry extends javax.swing.JPanel {
         xTitledBorder1.setTitle("Employee's Information");
         xFormPanel1.setBorder(xTitledBorder1);
 
-        xLookupField3.setText("xLookupField3");
         xLookupField3.setCaption("Employee Name");
         xLookupField3.setCaptionWidth(100);
+        xLookupField3.setExpression("#{item.lastname}");
+        xLookupField3.setHandler("lookupEmployeeHandler");
+        xLookupField3.setName("entity.employee"); // NOI18N
         xLookupField3.setPreferredSize(new java.awt.Dimension(300, 20));
         xFormPanel1.add(xLookupField3);
 
-        xLookupField5.setText("xLookupField5");
         xLookupField5.setCaption("Employee Office");
         xLookupField5.setCaptionWidth(100);
+        xLookupField5.setExpression("#{item.orgname}");
+        xLookupField5.setHandler("lookupOfficeHandler");
+        xLookupField5.setName("entity.org"); // NOI18N
         xLookupField5.setPreferredSize(new java.awt.Dimension(300, 20));
         xFormPanel1.add(xLookupField5);
 
@@ -60,15 +70,18 @@ public class customerTicketEntry extends javax.swing.JPanel {
         xFormPanel2.setCaptionWidth(100);
         xFormPanel2.setOrientation(com.rameses.rcp.constant.UIConstants.FLOW);
 
-        xLookupField1.setText("xLookupField1");
         xLookupField1.setCaption("Service Type");
         xLookupField1.setCaptionWidth(100);
+        xLookupField1.setExpression("#{item.name + \" - \" + item.code}");
+        xLookupField1.setHandler("lookupServiceTypeHandler");
+        xLookupField1.setName("entity.servicetype"); // NOI18N
         xLookupField1.setPreferredSize(new java.awt.Dimension(300, 20));
         xFormPanel2.add(xLookupField1);
 
         jScrollPane1.setPreferredSize(new java.awt.Dimension(300, 63));
 
         xTextArea1.setCaption("Particulars");
+        xTextArea1.setName("entity.particulars"); // NOI18N
         xTextArea1.setPreferredSize(new java.awt.Dimension(300, 61));
         jScrollPane1.setViewportView(xTextArea1);
 
@@ -76,16 +89,19 @@ public class customerTicketEntry extends javax.swing.JPanel {
 
         xRadio1.setCaption("Priority");
         xRadio1.setName("entity.priority"); // NOI18N
+        xRadio1.setOptionValue("low");
         xRadio1.setText("Low");
         xFormPanel2.add(xRadio1);
 
         xRadio2.setCaption("");
         xRadio2.setName("entity.priority"); // NOI18N
+        xRadio2.setOptionValue("medium");
         xRadio2.setText("Medium");
         xFormPanel2.add(xRadio2);
 
         xRadio3.setCaption("");
         xRadio3.setName("entity.priority"); // NOI18N
+        xRadio3.setOptionValue("high");
         xRadio3.setText("High");
         xFormPanel2.add(xRadio3);
 
