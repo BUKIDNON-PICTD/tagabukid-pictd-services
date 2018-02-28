@@ -58,6 +58,7 @@ public class ServiceTypePage extends javax.swing.JPanel {
         xTextField2.setRequired(true);
         xFormPanel1.add(xTextField2);
 
+        xTextArea1.setText("entity.description");
         xTextArea1.setCaption("Description");
         xTextArea1.setCaptionWidth(100);
         xTextArea1.setName("entity.ServiceDescription"); // NOI18N
