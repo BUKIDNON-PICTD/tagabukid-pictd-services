@@ -5,16 +5,22 @@
  */
 package tagabukid.pictdservice.views;
 
+import com.rameses.rcp.ui.annotations.StyleSheet;
+import com.rameses.rcp.ui.annotations.Template;
+import com.rameses.seti2.views.CrudFormPage;
+
 /**
  *
  * @author pictdpc
  */
-public class master_addServiceTypeForm extends javax.swing.JPanel {
+@StyleSheet
+@Template(CrudFormPage.class)
+public class ServiceTypePage extends javax.swing.JPanel {
 
     /**
      * Creates new form master_addServiceTypeForm1
      */
-    public master_addServiceTypeForm() {
+    public ServiceTypePage() {
         initComponents();
     }
 
@@ -52,7 +58,6 @@ public class master_addServiceTypeForm extends javax.swing.JPanel {
         xTextField2.setRequired(true);
         xFormPanel1.add(xTextField2);
 
-        xTextArea1.setText("entity.description");
         xTextArea1.setCaption("Description");
         xTextArea1.setCaptionWidth(100);
         xTextArea1.setName("entity.ServiceDescription"); // NOI18N
