@@ -36,8 +36,8 @@ public class ServiceTypePage extends javax.swing.JPanel {
         xFormPanel1 = new com.rameses.rcp.control.XFormPanel();
         xTextField1 = new com.rameses.rcp.control.XTextField();
         xTextField2 = new com.rameses.rcp.control.XTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        xTextArea1 = new com.rameses.rcp.control.XTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        xTextArea2 = new com.rameses.rcp.control.XTextArea();
 
         com.rameses.rcp.control.border.XTitledBorder xTitledBorder1 = new com.rameses.rcp.control.border.XTitledBorder();
         xTitledBorder1.setTitle("Service Type");
@@ -58,14 +58,14 @@ public class ServiceTypePage extends javax.swing.JPanel {
         xTextField2.setRequired(true);
         xFormPanel1.add(xTextField2);
 
-        xTextArea1.setText("entity.description");
-        xTextArea1.setCaption("Description");
-        xTextArea1.setCaptionWidth(100);
-        xTextArea1.setName("entity.ServiceDescription"); // NOI18N
-        xTextArea1.setPreferredSize(new java.awt.Dimension(300, 100));
-        jScrollPane1.setViewportView(xTextArea1);
+        jScrollPane2.setPreferredSize(new java.awt.Dimension(300, 63));
 
-        xFormPanel1.add(jScrollPane1);
+        xTextArea2.setCaption("Description");
+        xTextArea2.setCaptionWidth(100);
+        xTextArea2.setName("entity.description"); // NOI18N
+        jScrollPane2.setViewportView(xTextArea2);
+
+        xFormPanel1.add(jScrollPane2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -87,9 +87,9 @@ public class ServiceTypePage extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private com.rameses.rcp.control.XFormPanel xFormPanel1;
-    private com.rameses.rcp.control.XTextArea xTextArea1;
+    private com.rameses.rcp.control.XTextArea xTextArea2;
     private com.rameses.rcp.control.XTextField xTextField1;
     private com.rameses.rcp.control.XTextField xTextField2;
     // End of variables declaration//GEN-END:variables
