@@ -1,0 +1,5 @@
+<workunit extends="com/rameses/seti2/templates/CrudList.xml" schemaName="pictd_master_servicetypes">
+    <invokers>
+        <invoker folderid="/home/pictdservices/pictdservicesmaster" caption="Service Types" action="init" index="1" />
+    </invokers>
+</workunit>
