@@ -1,19 +1,19 @@
 <folders> 
     <folder id="explorer">
         <folder id="txn">
-            <folder id="pictdservicestransaction" caption="PICTD Services" index="1"/>
+            <folder id="pictdsvc" caption="PICTD Services" index="1"/>
         </folder>
         <folder id="master">
-            <folder id="pictdservicesmaster" caption="PICTD Services Master" index="1"/>
+            <folder id="pictdsvcmaster" caption="PICTD Services Master" index="1"/>
         </folder>
         <folder id="report">
-            <folder id="pictdservicesreport" caption="PICTD Services Reports" index="1">
+            <folder id="pictdsvcreport" caption="PICTD Services Reports" index="1">
             </folder>
         </folder>
     </folder> 
     <folder id="home">
-        <folder id="pictdservices" caption="PICTD Services">
-            <folder id="pictdservicesmaster" caption="Master" index="1"/>
+        <folder id="pictdsvc" caption="PICTD Services">
+            <folder id="pictdsvcmaster" caption="Master" index="1"/>
         </folder>
     </folder>
 </folders>
